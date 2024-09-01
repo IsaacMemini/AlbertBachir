@@ -1,0 +1,224 @@
+body{
+    background-image: url(image/test.jpg);
+    margin:0;
+    font-family: sans-serif;
+    background-size:cover;
+}
+
+.entete_image
+{
+    display:inline-block;
+    position:absolute;
+    bottom:6px;
+    left:40%; 
+}
+
+.cadre
+{
+    display:flex;
+    margin: 15px;
+    line-height: 1.5;    
+}
+.entete
+{
+    background: url(image/test1.jpg);
+    height: 410px;
+    text-align:center; 
+    background-size:100% 100%;
+    position:relative;
+
+}
+
+.presentation
+{
+    width:60%;
+    margin:20px;
+    padding:10px;
+    background:#fff;
+    font-weight: bold;
+    text-align: justify;
+    
+}
+
+.presentation,.jardin_enfant,.classe_primaire{
+    box-shadow: 3px 3px 10px 10px rgba(0,0,0,.1);
+    border: 1px solid #c4c2c2;
+    border-radius: 5px;   
+}
+.classe
+{
+    width:40%;
+}
+
+.jardin_enfant,.classe_primaire
+{
+    margin:20px;
+    padding:10px;
+    background:#fff;
+}
+
+.piedDePage
+{
+    padding:10px;
+    color:#fff;
+    background: #100248;
+    font-weight: bold;
+}
+
+.piedDePage span{
+    display: inline-block;
+    margin:4px 10px;
+}
+
+ul li span
+{
+    font-weight:bold;
+    color:rgb(0,100,255);
+}
+
+.entete_presentation
+{
+    background:#100248;
+    color:#fff;
+    width:30%;
+    padding:15px;
+    font-size: 23px;
+    font-weight:bold;
+    position:absolute;
+    bottom:-28.335px;
+    right:50px;
+    text-decoration: none;
+}
+
+
+.fondateur_devise
+{
+    background: linear-gradient(to left, rgba(0,0,0,.9) 50%, rgba(0,0,0,0)), url(image/waving-flag-senegal.jpg);
+    background-size: 100% 100%;
+    text-align:center;
+    font-size:32px;
+    font-weight: bold;    
+    position:relative;
+    margin:15px 20px 35px 20px;
+    height:230px;
+    border-radius: 5px;
+}
+
+
+.fondateur_devise::before{
+    content:"Apprendre et Grandir";
+    color:white;
+    position:absolute;
+    right:143.867px;
+    top:96.66665px;
+}
+
+.Actualite_Ecole
+{
+    background: #fff;
+    margin:25px 20px;
+    margin-top:50px;
+    padding:10px;
+    box-shadow:-1px 1px 4px lightgray;
+}
+
+.img
+{
+    box-shadow:-1px 1px 4px lightgray;
+}
+.row
+{
+    display:flex;
+    justify-content: space-around;
+}
+
+@media screen and  (max-width:1090px){
+    .entete_presentation{
+        font-size: 20.7px;
+    }
+}
+
+
+@media  screen and (max-width:982px) {
+    .entete_presentation{
+        font-size:18.63px;
+    }
+
+    .cadre{
+        font-size: 14px;
+    }
+}
+
+@media  screen and (max-width:884px) {
+    .entete_presentation{
+        font-size:16.767px;
+    }
+
+    .cadre{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:794px){
+    .entete_presentation{
+        font-size: 15.090px;
+    }
+
+    .cadre{
+        font-size: 11.5px;
+    }
+}
+
+@media screen and (max-width:762px){
+    .cadre{
+        align-items: center;
+        flex-direction: column; 
+    }
+
+    .presentation{
+        width:80%;
+    }
+
+    .classe{
+        width:80%;
+        display: flex;
+    }
+
+    .classe_primaire,.jardin_enfant{
+        width:60%;
+    }
+    
+}
+
+
+@media screen and (max-width:714px){
+    .entete_presentation{
+        font-size: 13.581px;
+        width:244.6px;
+    }
+}
+
+@media screen and (max-width:700px){
+    .classe_primaire h1{
+        font-size:20.7px;
+    }
+}
+
+@media screen and (max-width:648px){
+    .classe{
+        flex-direction:column;
+    }
+
+    .classe_primaire,.jardin_enfant{
+        width:100%;
+        margin:0 0 20px 0;
+        box-sizing: border-box;  
+    }
+
+}
+
+@media screen and (max-width:520px){
+    .entete_presentation{
+        right:calc(50% - 274.6px / 2);
+    }
+}
